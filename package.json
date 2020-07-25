@@ -1,0 +1,14 @@
+{
+  "name": "protoscript-tst",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Unlocked",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.2",
+    "ttypescript": "^1.5.10"
+  }
+}
