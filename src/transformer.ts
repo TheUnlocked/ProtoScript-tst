@@ -24,7 +24,7 @@ const transformer = (program: ts.Program, config?: ProtoScriptConfig): ts.Transf
 
                 const members = node.members.map(node => classEltToObjectLitElt(node));
                 const proto = ts.createObjectLiteral(members);
-                const protoId = ts.createUniqueName('proto');
+                const protoId = node.name ?? ts.createUniqueName('proto');
                 body.push(ts.createVariableStatement(
                     undefined,
                     ts.createVariableDeclarationList(

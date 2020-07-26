@@ -22,4 +22,6 @@ Alternatively, you can also use ts-node:
 ts-node --compiler ttypescript --files src/index.ts
 ```
 
+Because TypeScript's type system is built to support ES6 classes and not proto-classes, you'll often need to disable type-checking with `@ts-nocheck` and/or generate your own type declarations.
+
 TODO: better readme
